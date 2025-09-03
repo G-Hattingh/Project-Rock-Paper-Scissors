@@ -1,5 +1,6 @@
 function getComputerChoice () {
     let x = Math.floor(Math.random() * 3);
+    console.log(x);
     if (x === 0) {
         return "Computer chose Rock";
     } else if  (x ===1) {
