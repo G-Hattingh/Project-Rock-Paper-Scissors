@@ -45,6 +45,15 @@ function playGame() {
                 playRound(humanSelection, computerSelection);
             }
 
+            if(humanScore === computerScore) {
+                 console.log("You Tied: Play Again"); 
+            }
+            else if (humanScore > computerScore) {
+                 console.log("You Won: Congratulations");
+            }
+            else {
+                console.log("You lose: Try Again");
+            }
 
 
                 return "Final Score:  You: " + humanScore + " / Computer: " + computerScore;
