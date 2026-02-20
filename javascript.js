@@ -58,7 +58,7 @@ function playGame() {
          console.log("You lose: Try Again");
         }
 
- return "Final Score:  You: " + humanScore + " / Computer: " + computerScore;
+ console.log("Final Score:  You: " + humanScore + " / Computer: " + computerScore); 
 
 };
 playGame();
