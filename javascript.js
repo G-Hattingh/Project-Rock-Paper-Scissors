@@ -38,14 +38,15 @@ function playGame() {
                     computerScore++;
                     console.log("You lose: Try Again");}}
 
+
+            for (let i = 0; i < 5; i++) {
+                 const humanSelection = getHumanChoice();
+                const computerSelection = getComputerChoice();
+                playRound(humanSelection, computerSelection);
+            }
+
+
+
                 return "Final Score:  You: " + humanScore + " / Computer: " + computerScore;
-
-                
-
-
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-
-playRound(humanSelection, computerSelection);
 
 }
