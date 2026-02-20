@@ -18,3 +18,8 @@ function getHumanChoice() {
 
 const computerScore = 0;
 const humanScore = 0;
+
+function playRound(computerChoice, humanChoice) {
+        computerChoice = getComputerChoice();
+        humanChoice = getHumanChoice().toLowerCase();
+}
