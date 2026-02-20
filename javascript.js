@@ -22,7 +22,7 @@ const humanScore = 0;
 function playRound(computerChoice, humanChoice) {
         computerChoice = getComputerChoice();
         // humanChoice is now case-insensitive 
-        humanChoice = getHumanChoice().toLowerCase();
+        humanChoice = humanChoice.toLowerCase();
 
         if (humanChoice === computerChoice) {
             console.log("You Tied: Play Again");
@@ -37,3 +37,7 @@ function playRound(computerChoice, humanChoice) {
         }
 
 }
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+playRound(humanSelection, computerSelection);
