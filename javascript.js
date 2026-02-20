@@ -17,8 +17,8 @@ function getHumanChoice() {
 };
 
 function playGame() {
-    const computerScore = 0;
-    const humanScore = 0;
+    let computerScore = 0;
+    let humanScore = 0;
 
         function playRound(computerChoice, humanChoice) {
                 computerChoice = getComputerChoice();
@@ -61,3 +61,4 @@ function playGame() {
  return "Final Score:  You: " + humanScore + " / Computer: " + computerScore;
 
 };
+playGame();
