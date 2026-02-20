@@ -16,10 +16,11 @@ function getHumanChoice() {
     return choice;
 }
 
-const computerScore = 0;
-const humanScore = 0;
+function playGame() {
+        const computerScore = 0;
+        const humanScore = 0;
 
-function playRound(computerChoice, humanChoice) {
+        function playRound(computerChoice, humanChoice) {
         computerChoice = getComputerChoice();
         // humanChoice is now case-insensitive 
         humanChoice = humanChoice.toLowerCase();
@@ -41,3 +42,5 @@ const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
 playRound(humanSelection, computerSelection);
+
+}
