@@ -14,48 +14,50 @@ function getComputerChoice() {
 function getHumanChoice() {
     let choice = prompt("Choose: Rock, Paper, or Scissors");
     return choice;
-}
+};
 
 function playGame() {
-        const computerScore = 0;
-        const humanScore = 0;
+    const computerScore = 0;
+    const humanScore = 0;
 
-     function playRound(computerChoice, humanChoice) {
+        function playRound(computerChoice, humanChoice) {
                 computerChoice = getComputerChoice();
                 // humanChoice is now case-insensitive 
                 humanChoice = humanChoice.toLowerCase();
 
-             if (humanChoice === computerChoice) {
-                    console.log("You Tied: Play Again"); }
+                if (humanChoice === computerChoice) {
+                    console.log("No Points Awarded"); }
 
-            else if(humanChoice === "rock" && computerChoice ===      "scissors"                                            ||
+                 else if (humanChoice === "rock" && computerChoice ===      "scissors"                                        ||
                      humanChoice === "paper" && computerChoice === "rock"                                        ||
                      humanChoice === "scissors" && computerChoice === "paper" ) {
                     humanScore++;
-                    console.log("You Won: Congratulations");}
+                    console.log("You: " + humanScore + " / Computer: " + computerScore);}
 
-            else {
+                else {
                     computerScore++;
-                    console.log("You lose: Try Again");}}
+                    console.log("You: " + humanScore + " / Computer: " + computerScore);}}
 
 
-            for (let i = 0; i < 5; i++) {
-                 const humanSelection = getHumanChoice();
-                const computerSelection = getComputerChoice();
-                playRound(humanSelection, computerSelection);
+    for (let i = 0; i < 5; i++) {
+         const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+        playRound(humanSelection, computerSelection);
             }
 
-            if(humanScore === computerScore) {
-                 console.log("You Tied: Play Again"); 
-            }
-            else if (humanScore > computerScore) {
-                 console.log("You Won: Congratulations");
-            }
-            else {
-                console.log("You lose: Try Again");
-            }
+    if(humanScore === computerScore) {
 
+         console.log("You Tied: Play Again"); 
+        }
+    else if (humanScore > computerScore) {
 
-                return "Final Score:  You: " + humanScore + " / Computer: " + computerScore;
+         console.log("You Won: Congratulations");
+         }
+     else {
 
-}
+         console.log("You lose: Try Again");
+        }
+
+ return "Final Score:  You: " + humanScore + " / Computer: " + computerScore;
+
+};
