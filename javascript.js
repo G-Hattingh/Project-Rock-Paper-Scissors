@@ -12,7 +12,8 @@ function getComputerChoice() {
 };
 
 function getHumanChoice() {
-    let choice = prompt("Choose: Rock, Paper, or Scissors");
+    // let choice = prompt("Choose: Rock, Paper, or Scissors");
+     const choice = document.getElementById("btn");
     return choice;
 };
 
@@ -39,24 +40,24 @@ function playGame() {
                     console.log("You: " + humanScore + " / Computer: " + computerScore);}}
 
 
-    for (let i = 0; i < 5; i++) {
-         const humanSelection = getHumanChoice();
-        const computerSelection = getComputerChoice();
-        playRound(humanSelection, computerSelection);
-            }
+    // for (let i = 0; i < 5; i++) {
+    //      const humanSelection = getHumanChoice();
+    //     const computerSelection = getComputerChoice();
+    //     playRound(humanSelection, computerSelection);
+    //         }
 
-    if(humanScore === computerScore) {
+    // if(humanScore === computerScore) {
 
-         console.log("You Tied: Play Again"); 
-        }
-    else if (humanScore > computerScore) {
+    //      console.log("You Tied: Play Again"); 
+    //     }
+    // else if (humanScore > computerScore) {
 
-         console.log("You Won: Congratulations");
-         }
-     else {
+    //      console.log("You Won: Congratulations");
+    //      }
+    //  else {
 
-         console.log("You lose: Try Again");
-        }
+    //      console.log("You lose: Try Again");
+    //     }
 
  console.log("Final Score:  You: " + humanScore + " / Computer: " + computerScore); 
 
