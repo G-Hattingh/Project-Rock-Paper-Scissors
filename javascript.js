@@ -20,6 +20,9 @@ function makeSelection(event) {
     const playerChoice = event.target.id;
     const computerChoice = getComputerChoice();
 
+    console.log("Player: " + playerChoice);
+    console.log("Computer: " + computerChoice);
+
     playRound(playerChoice, computerChoice);
 }
 
@@ -28,49 +31,50 @@ function makeSelection(event) {
 
 
 
-function playGame() {
-    let computerScore = 0;
-    let humanScore = 0;
 
-        function playRound(computerChoice, humanChoice) {
-                computerChoice = getComputerChoice();
-                // humanChoice is now case-insensitive 
-                humanChoice = humanChoice.toLowerCase();
+// function playGame() {
+//     let computerScore = 0;
+//     let humanScore = 0;
 
-                if (humanChoice === computerChoice) {
-                    console.log("No Points Awarded"); }
+//         function playRound(computerChoice, humanChoice) {
+//                 computerChoice = getComputerChoice();
+//                 // humanChoice is now case-insensitive 
+//                 humanChoice = humanChoice.toLowerCase();
 
-                 else if (humanChoice === "rock" && computerChoice ===      "scissors"                                        ||
-                     humanChoice === "paper" && computerChoice === "rock"                                        ||
-                     humanChoice === "scissors" && computerChoice === "paper" ) {
-                    humanScore++;
-                    console.log("You: " + humanScore + " / Computer: " + computerScore);}
+//                 if (humanChoice === computerChoice) {
+//                     console.log("No Points Awarded"); }
 
-                else {
-                    computerScore++;
-                    console.log("You: " + humanScore + " / Computer: " + computerScore);}}
+//                  else if (humanChoice === "rock" && computerChoice ===      "scissors"                                        ||
+//                      humanChoice === "paper" && computerChoice === "rock"                                        ||
+//                      humanChoice === "scissors" && computerChoice === "paper" ) {
+//                     humanScore++;
+//                     console.log("You: " + humanScore + " / Computer: " + computerScore);}
+
+//                 else {
+//                     computerScore++;
+//                     console.log("You: " + humanScore + " / Computer: " + computerScore);}}
 
 
-    // for (let i = 0; i < 5; i++) {
-    //      const humanSelection = getHumanChoice();
-    //     const computerSelection = getComputerChoice();
-    //     playRound(humanSelection, computerSelection);
-    //         }
+//     // for (let i = 0; i < 5; i++) {
+//     //      const humanSelection = getHumanChoice();
+//     //     const computerSelection = getComputerChoice();
+//     //     playRound(humanSelection, computerSelection);
+//     //         }
 
-    // if(humanScore === computerScore) {
+//     // if(humanScore === computerScore) {
 
-    //      console.log("You Tied: Play Again"); 
-    //     }
-    // else if (humanScore > computerScore) {
+//     //      console.log("You Tied: Play Again"); 
+//     //     }
+//     // else if (humanScore > computerScore) {
 
-    //      console.log("You Won: Congratulations");
-    //      }
-    //  else {
+//     //      console.log("You Won: Congratulations");
+//     //      }
+//     //  else {
 
-    //      console.log("You lose: Try Again");
-    //     }
+//     //      console.log("You lose: Try Again");
+//     //     }
 
- console.log("Final Score:  You: " + humanScore + " / Computer: " + computerScore); 
+//  console.log("Final Score:  You: " + humanScore + " / Computer: " + computerScore); 
 
-};
-playGame();
+// };
+// playGame();
