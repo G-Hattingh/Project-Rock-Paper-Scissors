@@ -26,7 +26,20 @@ function makeSelection(event) {
     playRound(playerChoice, computerChoice);
 }
 
-
+function playRound(player, computer) {
+    if (player === computer) {
+        console.log("Tie!");
+    }
+    else if(player === "rock" && computer === "scissors" ||
+            player === "paper" && computer === "rock" ||
+            player === "scissors" && computer === "paper"
+     ) {
+        console.log("You Win!");
+     }
+     else {
+        console.log("You Lose!");
+     }
+};
 
 
 
