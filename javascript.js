@@ -11,11 +11,22 @@ function getComputerChoice() {
         return "scissors";}
 };
 
-function getHumanChoice() {
-    // let choice = prompt("Choose: Rock, Paper, or Scissors");
-     const choice = document.getElementById("btn");
-    return choice;
-};
+const button = document.querySelectorAll(".rps-btn"); 
+button.forEach(button =>
+    button.addEventListener("click", makeSelection())
+); 
+
+function makeSelection(event) {
+    const playerChoice = event.target.id;
+    const computerChoice = getComputerChoice();
+
+    playRound(playerChoice, computerChoice);
+}
+
+
+
+
+
 
 function playGame() {
     let computerScore = 0;
