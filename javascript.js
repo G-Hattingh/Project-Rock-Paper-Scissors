@@ -20,8 +20,8 @@ function makeSelection(event) {
     const playerChoice = event.target.id;
     const computerChoice = getComputerChoice();
 
-    console.log("Player: " + playerChoice);
-    console.log("Computer: " + computerChoice);
+    console.log("Player: ", playerChoice);
+    console.log("Computer: ", computerChoice);
 
     playRound(playerChoice, computerChoice);
 }
