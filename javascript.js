@@ -13,7 +13,7 @@ function getComputerChoice() {
 
 const button = document.querySelectorAll(".rps-btn"); 
 button.forEach(button =>
-    button.addEventListener("click", makeSelection())
+    button.addEventListener("click", makeSelection)
 ); 
 
 function makeSelection(event) {
